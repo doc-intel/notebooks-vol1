@@ -1,0 +1,18 @@
+[project]
+name = "docintel-vol1-notebooks"
+version = "1.0.0"
+description = "Code-only runnable companions to the Enterprise Document Intelligence series (Vol.1)."
+license = {text = "Proprietary - all rights reserved, see LICENSE"}
+requires-python = ">=3.11"
+dependencies = [
+  "openai>=1.40",
+  "pydantic>=2.6",
+  "pandas>=2.2",
+  "pymupdf>=1.24",
+  "numpy>=1.26",
+  "python-dotenv>=1.0",
+  "jupyter>=1.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["lib*"]
